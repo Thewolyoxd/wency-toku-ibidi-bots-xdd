@@ -13,7 +13,7 @@ class NoUNBANRemove extends Command {
     }
 
     async run(message, args, client) {
-        if (!message.member.roles.cache.has("727881272893898773")) return
+        if (!message.member.roles.cache.has("906464769203126302")) return
         let embed = new Discord.MessageEmbed()
         embed.setColor("RANDOM")
         embed.setAuthor(message.author.tag, message.author.avatarURL({ dynamic: true }))
@@ -35,7 +35,7 @@ class NoUNBANRemove extends Command {
                                 return message.channel.send(embed)
                             } else {
                                 embed.setDescription(`Bu kullanıcının açılmaz ban etiketini kaldırmak için yeterli izinlere sahip değilsin.`)
-                                if (!message.member.roles.cache.has("727881272893898773")) return message.channel.send(embed)
+                                if (!message.member.roles.cache.has("906464769203126302")) return message.channel.send(embed)
                                 doc.delete().catch(e => console.log(e))
                                 embed.setDescription(`**${res.tag}** kullanıcısının açılmaz ban etiketi kaldırıldı.`)
                             }
