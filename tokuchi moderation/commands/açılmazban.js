@@ -13,7 +13,7 @@ class NoUNBAN extends Command {
     }
 
     async run(message, args, client) {
-        if(!message.member.roles.cache.has("727881272893898773")) return
+        if(!message.member.roles.cache.has("906464769203126302")) return
         let embed = new Discord.MessageEmbed()
         embed.setColor("RANDOM")
         embed.setAuthor(message.author.tag, message.author.avatarURL({ dynamic: true }))
